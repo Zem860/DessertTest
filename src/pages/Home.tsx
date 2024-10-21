@@ -12,7 +12,7 @@ const Home = () => {
       <div className="flex justify-center items-center">
         <Slogan words1={'想吃甜點———'} words2={'是不需要理由的'} singleSlogan />
       </div>
-      <div className=" my-24 mx-auto text-center justify-items-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className=" p-6 md:p-0 my-24 mx-auto text-center justify-items-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <Card />
         <div className=" hidden md:block">
           <Card />
@@ -22,6 +22,7 @@ const Home = () => {
         </div>
       </div>
       <EmailBar />
+      <div></div>
     </>
   );
 };
