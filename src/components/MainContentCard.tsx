@@ -15,7 +15,7 @@ const MainContentCard = ({ reverse }: MainContentCardProps) => {
     : ['為甚麼———', '一定要吃甜點。'];
 
   return (
-    <section className=" mb-[63rem] md:mb-20">
+    <section className=" mb-[63rem] md:mb-20 ">
       <div
         className={`w-full flex flex-col ${isReversed} md:items-center md:justify-around h-96 md:bg-homebackground-green `}
       >
@@ -32,11 +32,6 @@ const MainContentCard = ({ reverse }: MainContentCardProps) => {
             是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
           </p>
         </div>
-        {/* <div className="order-1 p-10 md:p-0 md:order-none flex flex-col items-center md:flex-row-reverse  h-[460px] ">
-            <p className="vertical-words text-5xl">為甚麼———</p>
-            <p className="vertical-words text-5xl">選擇了做甜點?</p>
-          </div> */}
-
         <Slogan words1={defaultSlogan[0]} words2={defaultSlogan[1]} singleSlogan = {false}/>
       </div>
     </section>
