@@ -22,7 +22,7 @@ const Home = () => {
         </div>
       </div>
       <EmailBar />
-      <div></div>
+      <div className='bg-[#EAF0ED]'> <Slogan words1={'今天是個———'} words2={'吃甜點的日子'} singleSlogan /></div>
     </>
   );
 };

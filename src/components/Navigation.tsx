@@ -1,5 +1,5 @@
 import HamburgerBtn from './HamburgerBtn'; // 引入漢堡按鈕元件
-
+import { Link } from 'react-router-dom';
 const Navigation = () => {
   // 控制菜單的開
 
@@ -7,9 +7,9 @@ const Navigation = () => {
     <>
       <nav className="flex mx-auto w-10/12 px-4 py-2">
         <ul className=" w-full md: flex items-center justify-between ">
-        <div className="flex md:hidden">
-          <HamburgerBtn />
-        </div>
+          <div className="flex md:hidden">
+            <HamburgerBtn />
+          </div>
           <div className="flex items-center">
             {/* Logo */}
             <img
@@ -21,10 +21,16 @@ const Navigation = () => {
             />
           </div>
           <div className="hidden md:flex nav-items space-x-4 text-dessert-green font-bold">
-            <li>首頁</li>
-            <li>甜點</li>
-            <li>登入</li>
-            <li >
+            <li>
+              <Link to="/">首頁</Link>
+            </li>
+            <li>
+              <Link to="/Sweet">甜點</Link>
+            </li>
+            <li>
+              <Link to="/Login">登入</Link>
+            </li>
+            <li>
               <img
                 src={
                   'https://firebasestorage.googleapis.com/v0/b/potoro-5fe55.appspot.com/o/dessert%2Fshopping_cart.png?alt=media&token=b88f926b-edeb-4b29-a397-1638b4f6300c'
@@ -35,7 +41,7 @@ const Navigation = () => {
           </div>
 
           <div className="block md:hidden">
-            <li >
+            <li>
               <img
                 src={
                   'https://firebasestorage.googleapis.com/v0/b/potoro-5fe55.appspot.com/o/dessert%2Fshopping_cart.png?alt=media&token=b88f926b-edeb-4b29-a397-1638b4f6300c'

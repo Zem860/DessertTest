@@ -15,8 +15,8 @@ const Card = () => {
           alt=""
         /> */}
         <div className="flex justify-between">
-          <div className="p-4 text-center w-full border-[1px] text-4xl text-[#3F5D45]">焦糖瑪卡龍</div>
-          <div className="p-4 text-center w-full border-[1px] text-4xl text-[#3F5D45] font-bold">NT$450</div>
+          <div className="p-4 text-center w-full border-[1px] text-4xl md:text-[1.2rem] text-[#3F5D45]">焦糖瑪卡龍</div>
+          <div className="p-4 text-center w-full border-[1px] text-4xl md:text-[1.2rem] text-[#3F5D45] font-bold">NT$450</div>
         </div>
         <div className=" flex justify-between items-center">
           <p className="bg-[#EAF0ED] cursor-pointer text-[#3F5D45] font-bold text-center text-5xl md:text-2xl  w-full p-4">加入購物車</p>
