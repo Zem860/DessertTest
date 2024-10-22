@@ -32,7 +32,7 @@ const MainContentCard = ({ reverse }: MainContentCardProps) => {
             是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
           </p>
         </div>
-        <Slogan words1={defaultSlogan[0]} words2={defaultSlogan[1]} singleSlogan = {false}/>
+        <Slogan words1={defaultSlogan[0]} words2={defaultSlogan[1]} size="text-4xl" singleSlogan = {false}/>
       </div>
     </section>
   );
