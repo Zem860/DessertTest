@@ -2,7 +2,6 @@ import HomeHeader from '../components/HomeHeader';
 import MainContentCard from '../components/MainContentCard';
 import Slogan from '../components/Slogan';
 import Card from '../components/Card';
-import EmailBar from '../components/EmailBar';
 import Footer from '../components/Footer';
 import { imagesLinksHompage } from '../components/ImageData';
 const Home = () => {
@@ -31,7 +30,6 @@ const Home = () => {
           <Card />
         </div> */}
       </div>
-      <EmailBar />
       <Footer />
     </>
   );

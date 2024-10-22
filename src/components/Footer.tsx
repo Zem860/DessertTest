@@ -1,7 +1,10 @@
 import Slogan from './Slogan';
+import EmailBar from './EmailBar';
 const Footer = () => {
   return (
     <>
+      <div>
+        <EmailBar />
       <div className="py-8 px-10 bg-[#EAF0ED] flex flex-col md:flex-row md:justify-around">
         <div className="flex flex-col justify-between space-y-16">
           <img
@@ -45,6 +48,7 @@ const Footer = () => {
             © 2018 Sweetaste* All Rights Reserved
           </p>
         </div>
+      </div>
       </div>
     </>
   );

@@ -1,5 +1,4 @@
 import HomeHeader from '../components/HomeHeader';
-import EmailBar from '../components/EmailBar';
 import Footer from '../components/Footer';
 import Card from '../components/Card';
 import { imagesLinksSweet } from '../components/ImageData';
@@ -58,7 +57,6 @@ const Sweet = () => {
           </div>
         </div>
       </div>
-      <EmailBar />
       <Footer />
     </>
   );
