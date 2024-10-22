@@ -10,7 +10,7 @@ const HomeHeader = () => {
     <>
       <header className="md:mx-auto">
         <section className=" md:w-full  md:px-4 md:py-2">
-          <div className="banner bg-cover bg-center h-96  w-full" style={{"backgroundImage":`url(${bgBackground})`}}></div>
+          <div className="banner bg-cover bg-center h-[496px]  w-full" style={{"backgroundImage":`url(${bgBackground})`}}></div>
         </section>
         {location.pathname === '/' && <HeaderCards />}
       </header>
