@@ -14,4 +14,3 @@ export const imagesLinksHompage: string[] = [
     'https://bit.ly/2zBDAxX',
     'https://bit.ly/2NcDVuB',
   ];
-  
