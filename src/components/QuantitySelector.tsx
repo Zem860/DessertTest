@@ -1,25 +1,33 @@
-import { useState } from 'react';
-const QuantitySelector = () => {
-  const [value, setValue] = useState(0);
-  const increase = () => {
-    setValue(value + 1);
-  };
+// import { useState } from 'react';
 
-  const decrease = () => {
-    if (value === 0){
-        return 
-    }
-    setValue(value - 1);
-  };
+interface QS{
+  amount:number,
+  increase:(index:number)=>void,
+  decrease:(index:number)=>void,
+  index:number,
+}
+
+const QuantitySelector = ({ amount, increase, decrease, index }:QS) => {
+  // const [value, setValue] = useState(0);
+  // const increase = () => {
+  //   setValue(value + 1);
+  // };
+
+  // const decrease = () => {
+  //   if (value === 0){
+  //       return 
+  //   }
+  //   setValue(value - 1);
+  // };
 
   return (
     <>
       <div className="flex flex-row">
         <button
           onClick={() => {
-            decrease();
+            decrease(index);
           }}
-          className="px-3 border border-solid active:bg-slate-500"
+          className="px-3 h-[48px] border border-solid active:bg-slate-500"
         >
           -
         </button>
@@ -27,13 +35,13 @@ const QuantitySelector = () => {
           readOnly
           className="p-2 w-[48px] h-[48px]"
           type="text"
-          placeholder={`${value}`}
+          placeholder={`${amount}`}
         />
         <button
           onClick={() => {
-            increase();
+            increase(index);
           }}
-          className="px-3 border border-solid active:bg-slate-500"
+          className="px-3 h-[48px] border border-solid active:bg-slate-500"
         >
           +
         </button>
