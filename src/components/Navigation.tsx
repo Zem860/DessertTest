@@ -31,12 +31,14 @@ const Navigation = () => {
               <Link to="/Login">登入</Link>
             </li>
             <li>
-              <img
-                src={
-                  'https://firebasestorage.googleapis.com/v0/b/potoro-5fe55.appspot.com/o/dessert%2Fshopping_cart.png?alt=media&token=b88f926b-edeb-4b29-a397-1638b4f6300c'
-                }
-                alt="shopping cart logo"
-              />
+              <Link to="/cart">
+                <img
+                  src={
+                    'https://firebasestorage.googleapis.com/v0/b/potoro-5fe55.appspot.com/o/dessert%2Fshopping_cart.png?alt=media&token=b88f926b-edeb-4b29-a397-1638b4f6300c'
+                  }
+                  alt="shopping cart logo"
+                />
+              </Link>
             </li>
           </div>
 

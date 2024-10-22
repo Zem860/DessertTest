@@ -4,6 +4,7 @@ import Sweet from './pages/Sweet';
 import NotFound from './pages/NotFound';
 import Navigation from './components/Navigation';
 import Login from './pages/Login';
+import Cart from './pages/Cart';
 import './index.css'
 import './styles/style.css'
 
@@ -17,6 +18,8 @@ function App() {
         <Route  path="/sweet" element={<Sweet/>}/>
         <Route  path="/login" element={<Login/>}/>
         {/* <Route  path="/ramen/:id" element={<RamenDetails/>}/> */}
+        <Route  path="/cart" element={<Cart/>}/>
+
         <Route  path="*" element={<NotFound/>}/>
 
       </Routes>
