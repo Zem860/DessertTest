@@ -1,8 +1,11 @@
+import RadioLine from "../components/RadioLine";
+
 const Checkout = () => {
-    return ( <>
-    
-    
-    </>  );
-}
- 
+  return (
+    <>
+     <RadioLine />
+    </>
+  );
+};
+
 export default Checkout;
