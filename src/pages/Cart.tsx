@@ -31,7 +31,7 @@ const Cart = () => {
           >
             您的購物車
           </div>
-          <ul className=' flex flex-col'>
+          <ul className=" flex flex-col">
             {cartImg.map((image, index) => (
               <li
                 key={index}
@@ -56,14 +56,15 @@ const Cart = () => {
                       index={index}
                     />
                   </div>
-                  <div className='flex  justify-end'>
-                  <p className="w-full flex text-end lg:text-center lg:w-0 my-5 border-b border-b-homebackground-green-4  border-t border-t-homebackground-green-4 text-dessert-green font-bold text-[1.25rem]">
+                </div>
+
+                <div className="flex justify-end py-2 border-b border-b-poetry-5 border-t border-t-poetry-5 lg:justify-between items-center w-full lg:w-auto">
+                  <p className="text-dessert-green font-bold text-[1.25rem]">
                     NT${(Number(amounts[index]) * 450).toLocaleString()}
-                    <span className="cursor-pointer material-icons lg:block hidden">
+                  </p>
+                  <span className="cursor-pointer material-icons lg:block hidden">
                     delete_outline
                   </span>
-                  </p>
-                  </div>
                 </div>
               </li>
             ))}
