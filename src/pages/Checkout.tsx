@@ -10,7 +10,7 @@ const Checkout = () => {
             <RadioLine />
           </div>
 
-          <div className="secondRow flex  justify-around w-full mb-3">
+          <div className="secondRow flex  justify-between gap-3 w-full mb-3">
             <div className="flex flex-col">
               <label
                 htmlFor="family name"
@@ -19,7 +19,7 @@ const Checkout = () => {
                 姓氏
               </label>
               <input
-                className="w-[15rem] h-[3rem]"
+                className="h-[3rem] w-full"
                 type="text"
                 id="family name"
                 placeholder="王"
@@ -33,7 +33,7 @@ const Checkout = () => {
                 名字
               </label>
               <input
-                className="w-[15rem] h-[3rem]"
+                className=" h-[3rem]  w-full"
                 type="text"
                 id="name"
                 placeholder="小明"
@@ -41,7 +41,7 @@ const Checkout = () => {
             </div>
           </div>
 
-          <div className="thirdRow mb-3">
+          <div className="thirdRow mb-3 w-full">
             <div className="flex flex-col">
               <label
                 htmlFor="telephone"
@@ -50,7 +50,7 @@ const Checkout = () => {
                 電話
               </label>
               <input
-                className="w-[32rem] h-[3rem]"
+                className="h-[3rem]"
                 type="text"
                 id="telephone"
                 placeholder="0912-345-678"
@@ -58,7 +58,7 @@ const Checkout = () => {
             </div>
           </div>
 
-          <div className="fourthRow mb-3">
+          <div className="fourthRow mb-3 w-full">
             <div className="flex flex-col">
               <label
                 htmlFor="address3"
@@ -66,11 +66,11 @@ const Checkout = () => {
               >
                 地址
               </label>
-              <div className="flex justify-between">
+              <div className="flex justify-between gap-3">
                 <div className="relative">
                   <input
                     type="text"
-                    className=" border border-gray-300 py-2 px-4 w-full pr-10"
+                    className=" border border-gray-300 py-2 w-full pr-10"
                     placeholder="選擇選項"
                   />
                   <div className="flex flex-col items-center">
@@ -85,7 +85,7 @@ const Checkout = () => {
                 <div className="relative">
                   <input
                     type="text"
-                    className="border border-gray-300 py-2 px-4 w-full pr-10"
+                    className="border border-gray-300 py-2 w-full pr-10"
                     placeholder="選擇選項"
                   />
                   <div className="flex flex-col items-center">
@@ -98,17 +98,18 @@ const Checkout = () => {
                   </div>
                 </div>
               </div>
-              <input
-                className="w-[32rem] h-[3rem] mt-3"
-                type="text"
-                id="address3"
-                placeholder="幸福路520號"
-              />
             </div>
+            <input
+              className="w-full h-[3rem] mt-3"
+              type="text"
+              id="address3"
+              placeholder="幸福路520號"
+            />
           </div>
-          
         </div>
-        <button  className=' py-4 w-[50%] bg-btn-yellow text-dessert-green text-5xl'>下一步</button>
+        <button className=" py-4 w-[50%] bg-btn-yellow text-dessert-green text-5xl">
+          下一步
+        </button>
       </div>
 
       <Footer />
