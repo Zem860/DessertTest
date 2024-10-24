@@ -2,14 +2,14 @@ import Footer from '../components/Footer';
 import QuantitySelector from '../components/QuantitySelector';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useDispatch,useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../state/store';
 import { deleteData } from '../state/cartData/cartDataSlice';
 const Cart = () => {
-  const cartData = useSelector((state:RootState)=>state.cartData.value)
-  const dispatch = useDispatch()
+  const cartData = useSelector((state: RootState) => state.cartData.value);
+  const dispatch = useDispatch();
   const [amounts, setAmounts] = useState(cartData.map(() => 0));
-  
+
   const increase = (index: number) => {
     const newAmounts = [...amounts];
     newAmounts[index] += 1;
@@ -68,7 +68,12 @@ const Cart = () => {
                   <p className="text-dessert-green font-bold text-[1.25rem]">
                     NT${(Number(amounts[index]) * 450).toLocaleString()}
                   </p>
-                  <span className="cursor-pointer material-icons lg:block hidden" onClick={()=>{dispatch(deleteData(index))}}>
+                  <span
+                    className="cursor-pointer material-icons lg:block hidden"
+                    onClick={() => {
+                      dispatch(deleteData(index));
+                    }}
+                  >
                     delete_outline
                   </span>
                 </div>
@@ -90,9 +95,11 @@ const Cart = () => {
             <div className="flex m-4 justify-between  text-dessert-green lg:text-homebackground-green font-bold text-[1.25rem] mb-2">
               <p>總計</p> <p>{(sum() + 300).toLocaleString()}</p>
             </div>
-            <button type="button" className="bg-btn-yellow px-5 py-3 w-full">
-              <Link to="/checkout">結帳</Link>
-            </button>
+            <Link to="/checkout">
+              <button type="button" className="bg-btn-yellow px-5 py-3 w-full">
+                結帳
+              </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -7,9 +7,9 @@ const Checkout = () => {
 
   return (
     <>
-      <div className="w-[80%] mx-auto mt-20">
-        <div className="flex justify-between items-stretch gap-6  mb-20">
-          <div className="flex flex-col w-[50%] ">
+      <div className="w-full md:w-[80%] md:mx-auto md:mt-20">
+        <div className="flex justify-between items-stretch gap-6  md:mb-20">
+          <div className="flex flex-col w-full md:w-[50%] ">
             <div className=" flex flex-col  justify-around p-8 bg-dessert-green h-full">
               <div className="firstRow flex justify-around w-full">
                 <p className="text-homebackground-green text-4xl">運送</p>
@@ -119,7 +119,7 @@ const Checkout = () => {
               </button>
             </div>
           </div>
-          <div className=" w-[50%] flex flex-col basis-[300px] items-center  ">
+          <div className=" w-[50%] hidden md:flex flex-col basis-[300px] items-center  ">
             <div className="upperBox flex flex-col w-full border mb-6 border-poetry ">
               <div className="mb-5 text-poetry text-3xl text-center py-2 bg-homebackground-green w-full">
                 <p>訂單查詢</p>
@@ -146,15 +146,15 @@ const Checkout = () => {
               <div className="content p-6">
                 <ul className='flex flex-col justify-between'>
                   {cartData.map((image, index) => (
-                    <li key={index} className="flex mb-2 justify-between">
+                    <li key={index} className="flex mb-2 justify-between items-center">
                       <img
                         className="w-[120px] h-[80px]"
                         src={image}
                         alt="sweets image"
                       />
-                      <div className='content'>
+                      <div className='content text-poetry'>
                         <p>焦糖馬卡龍（2）</p>
-                        <p>NT$ 900</p>
+                        <p className='font-bold text-[1.2rem]'>NT$ 900</p>
                       </div>
                     </li>
                   ))}
