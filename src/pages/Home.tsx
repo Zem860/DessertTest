@@ -20,15 +20,6 @@ const Home = () => {
           <Card key={index} bgBackground={image} />
         </div>
       ))}
-        
-        
-        {/* <Card />
-        <div className=" hidden md:block">
-          <Card />
-        </div>
-        <div className=" hidden md:block">
-          <Card />
-        </div> */}
       </div>
       <Footer />
     </>

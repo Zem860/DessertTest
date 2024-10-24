@@ -1,18 +1,22 @@
 import RadioLine from '../components/RadioLine';
 import Footer from '../components/Footer';
+import { RootState } from '../state/store';
+import { useSelector } from 'react-redux';
 const Checkout = () => {
+  const cartData = useSelector((state: RootState) => state.cartData.value);
+
   return (
     <>
-      <div className="w-[80%] mx-auto mt-20 ">
-        <div className="flex">
+      <div className="w-[80%] mx-auto mt-20">
+        <div className="flex justify-between items-stretch gap-6  mb-20">
           <div className="flex flex-col w-[50%] ">
-            <div className=" flex flex-col items-center p-8 bg-dessert-green">
+            <div className=" flex flex-col  justify-around p-8 bg-dessert-green h-full">
               <div className="firstRow flex justify-around w-full">
                 <p className="text-homebackground-green text-4xl">運送</p>
                 <RadioLine />
               </div>
 
-              <div className="secondRow flex  justify-between gap-3 w-full mb-3">
+              <div className="secondRow flex  justify-between gap-3 w-full">
                 <div className="flex flex-col">
                   <label
                     htmlFor="family name"
@@ -43,7 +47,7 @@ const Checkout = () => {
                 </div>
               </div>
 
-              <div className="thirdRow mb-3 w-full">
+              <div className="thirdRow w-full">
                 <div className="flex flex-col">
                   <label
                     htmlFor="telephone"
@@ -60,7 +64,7 @@ const Checkout = () => {
                 </div>
               </div>
 
-              <div className="fourthRow mb-3 w-full">
+              <div className="fourthRow w-full">
                 <div className="flex flex-col">
                   <label
                     htmlFor="address3"
@@ -115,8 +119,48 @@ const Checkout = () => {
               </button>
             </div>
           </div>
-          <div className=" w-[50%] flex flex-col items-center p-8 bg-yellow-300">
-
+          <div className=" w-[50%] flex flex-col basis-[300px] items-center  ">
+            <div className="upperBox flex flex-col w-full border mb-6 border-poetry ">
+              <div className="mb-5 text-poetry text-3xl text-center py-2 bg-homebackground-green w-full">
+                <p>訂單查詢</p>
+              </div>
+              <div className="px-8">
+                <div className="flex justify-between mb-5 text-poetry">
+                  <p>小計</p>
+                  <p>NT$ 2,700</p>
+                </div>
+                <div className="flex justify-between mb-5 text-poetry">
+                  <p>運費</p>
+                  <p>NT$ 300</p>
+                </div>
+                <div className="flex justify-between mb-5 text-[1.25rem] text-poetry font-bold">
+                  <p>總計</p>
+                  <p>NT$ 3,000</p>
+                </div>
+              </div>
+            </div>
+            <div className="upperBox flex flex-col w-full border border-poetry">
+              <div className="mb-5 text-poetry text-3xl text-center py-2 bg-homebackground-green w-full">
+                <p>購物清單</p>
+              </div>
+              <div className="content p-6">
+                <ul className='flex flex-col justify-between'>
+                  {cartData.map((image, index) => (
+                    <li key={index} className="flex mb-2 justify-between">
+                      <img
+                        className="w-[120px] h-[80px]"
+                        src={image}
+                        alt="sweets image"
+                      />
+                      <div className='content'>
+                        <p>焦糖馬卡龍（2）</p>
+                        <p>NT$ 900</p>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
