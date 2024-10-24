@@ -1,5 +1,4 @@
 import RadioLine from '../components/RadioLine';
-import Footer from '../components/Footer';
 import { RootState } from '../state/store';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
@@ -169,8 +168,6 @@ const Checkout = () => {
           </div>
         </div>
       </div>
-
-      <Footer />
     </>
   );
 };

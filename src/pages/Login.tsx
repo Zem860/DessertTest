@@ -1,4 +1,3 @@
-import Footer from '../components/Footer';
 import { passportImg } from '../components/ImageData';
 const Login = () => {
   return (
@@ -74,7 +73,6 @@ const Login = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

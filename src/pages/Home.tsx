@@ -2,7 +2,6 @@ import HomeHeader from '../components/HomeHeader';
 import MainContentCard from '../components/MainContentCard';
 import Slogan from '../components/Slogan';
 import Card from '../components/Card';
-import Footer from '../components/Footer';
 import { imagesLinksHompage } from '../components/ImageData';
 const Home = () => {
   return (
@@ -21,7 +20,6 @@ const Home = () => {
         </div>
       ))}
       </div>
-      <Footer />
     </>
   );
 };

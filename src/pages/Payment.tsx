@@ -1,5 +1,4 @@
 import RadioLine from '../components/RadioLine';
-import Footer from '../components/Footer';
 import { RootState } from '../state/store';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
@@ -32,10 +31,11 @@ const Payment = () => {
                   </label>
                   <div className="relative">
                     <input
-                      className="h-[3rem] w-full"
+                      className="h-[3rem] w-full px-4"
                       type="text"
                       id="credit card number"
                       placeholder="9012-3456-7890-1234"
+                      
                     />
                     <span className="invisible md:visible absolute material-icons-outlined top-1/4 right-3">
                       credit_card
@@ -52,13 +52,13 @@ const Payment = () => {
                 </label>
                 <div className="thirdRow flex  justify-between gap-3 w-full">
                   <input
-                    className="h-[3rem] w-full"
+                    className="h-[3rem] w-full px-4"
                     type="text"
                     id="cardNumber1"
                     placeholder="王"
                   />
                   <input
-                    className=" h-[3rem]  w-full"
+                    className=" h-[3rem]  w-full px-4"
                     type="text"
                     id="cardNumber2"
                     placeholder="小明"
@@ -77,7 +77,7 @@ const Payment = () => {
                     <div className="relative">
                       <input
                         type="text"
-                        className=" border border-gray-300 py-2 w-full pr-10"
+                        className=" border border-gray-300 py-2 w-full px-4"
                         placeholder="月"
                       />
                       <div className="flex flex-col items-center">
@@ -92,7 +92,7 @@ const Payment = () => {
                     <div className="relative">
                       <input
                         type="text"
-                        className="border border-gray-300 py-2 w-full pr-10"
+                        className="border border-gray-300 py-2 w-full px-4"
                         placeholder="年"
                       />
                       <div className="flex flex-col items-center">
@@ -116,7 +116,7 @@ const Payment = () => {
                       <input
                         id="CVV"
                         type="text"
-                        className=" border border-gray-300 py-2 w-full pr-10"
+                        className=" border border-gray-300 py-2 w-full px-4"
                         placeholder="123"
                       />
                     </div>
@@ -125,7 +125,7 @@ const Payment = () => {
               </div>
             </div>
             <div className="w-full">
-              <Link to="/payment">
+              <Link to="/confirm">
                 <button className=" py-4 w-full bg-btn-yellow text-dessert-green text-5xl">
                   下一步
                 </button>
@@ -180,8 +180,6 @@ const Payment = () => {
           </div>
         </div>
       </div>
-
-      <Footer />
     </>
   );
 };

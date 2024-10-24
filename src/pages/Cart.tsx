@@ -1,4 +1,3 @@
-import Footer from '../components/Footer';
 import QuantitySelector from '../components/QuantitySelector';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -103,7 +102,6 @@ const Cart = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 };

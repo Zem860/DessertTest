@@ -1,5 +1,4 @@
 import HomeHeader from '../components/HomeHeader';
-import Footer from '../components/Footer';
 import Card from '../components/Card';
 import { imagesLinksSweet } from '../components/ImageData';
 const Sweet = () => {
@@ -57,7 +56,6 @@ const Sweet = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 };
