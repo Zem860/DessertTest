@@ -6,6 +6,7 @@ const HomeHeader = () => {
   const HomepageBannerPhoto = 'https://bit.ly/2OhbMHr'
   const SweetBannerPhoto = 'https://bit.ly/2Qodh3Z';
   const bgBackground = location.pathname === '/'?HomepageBannerPhoto:SweetBannerPhoto
+
   return (
     <>
       <header className="md:mx-auto">

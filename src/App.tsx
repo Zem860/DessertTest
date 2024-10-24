@@ -6,6 +6,8 @@ import Navigation from './components/Navigation';
 import Login from './pages/Login';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
+import Payment from './pages/Payment';
+import SuccessPayment from './pages/SuccessPayment';
 import './index.css'
 import './styles/style.css'
 
@@ -22,7 +24,8 @@ function App() {
 
         {/* <Route  path="/ramen/:id" element={<RamenDetails/>}/> */}
         <Route  path="/cart" element={<Cart/>}/>
-
+        <Route  path="/payment" element={<Payment/>}/>
+        <Route  path="/success" element={<SuccessPayment/>}/>
         <Route  path="*" element={<NotFound/>}/>
 
       </Routes>
