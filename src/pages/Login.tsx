@@ -1,8 +1,8 @@
 import { passportImg } from '../components/ImageData';
 const Login = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-between">
-      <div className="mx-20 flex flex-row justify-center items-center py-3">
+    <div className="flex flex-col justify-between">
+      <div className=" mx-20 flex flex-row justify-center items-center py-3">
         <div className="Login bg-dessert-green w-[390px] h-[380px] flex flex-col justify-between">
           <p className=" text-center px-5 py-3 text-[36px] text-homebackground-green">
             會員登入
