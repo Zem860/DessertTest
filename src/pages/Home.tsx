@@ -10,7 +10,7 @@ const Home = () => {
       <MainContentCard reverse={true} />
       <MainContentCard reverse={false} />
       <div className="flex justify-center items-center">
-        <Slogan words1={'想吃甜點———'} words2={'是不需要理由的'} size="text-5xl" singleSlogan />
+        <Slogan words1={'想吃甜點——'} words2={'是不需要理由的'} size="text-5xl" singleSlogan alwaysVertical={false}/>
       </div>
       <div className=" p-6 md:p-0 my-24 mx-auto text-center justify-items-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       {imagesLinksHompage.map((image, index) => (

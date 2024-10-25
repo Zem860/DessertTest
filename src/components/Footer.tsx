@@ -41,6 +41,7 @@ const Footer = () => {
             words2={'吃甜點的日子'}
             size="text-3xl"
             singleSlogan
+            alwaysVertical={false}
           />
           </div>
 
