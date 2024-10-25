@@ -21,14 +21,14 @@ const MainContentCard = ({ reverse }: MainContentCardProps) => {
       >
         <div
           style={{ backgroundImage: `url(${imageShown})` }}
-          className={`order-2 w-full h-auto aspect-square md:order-none bg-cover bg-center md:w-[460px] md:h-[460px]  max-w-full`}
+          className={`order-2 w-full h-auto aspect-square md:order-none bg-cover bg-center md:max-w-[460px] md:max-h-[460px] max-w-full`}
         ></div>
         <div className=" p-5 md:p-0 order-3 md:order-none bg-homebackground-green h-auto flex flex-col md:justify-between md:flex-row-reverse md:h-72 ">
           <p className=" poetry">
             青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
           </p>
           <br />
-          <p className=" poetry  pr-10">
+          <p className=" poetry lg:pr-10">
             是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
           </p>
         </div>
