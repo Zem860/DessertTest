@@ -1,9 +1,9 @@
 import { passportImg } from '../components/ImageData';
 const Login = () => {
   return (
-    <div className="flex flex-col justify-between">
-      <div className=" mx-20 flex flex-row justify-center items-center py-3">
-        <div className="Login bg-dessert-green w-[390px] h-[380px] flex flex-col justify-between">
+    <div className="md:flex md:flex-col md:justify-between">
+      <div className="md:mx-20 md:flex md:flex-row md:justify-center md:items-center md:py-3">
+        <div className="Login  bg-dessert-green md:w-[390px] md:h-[380px] flex flex-col justify-between">
           <p className=" text-center px-5 py-3 text-[36px] text-homebackground-green">
             會員登入
           </p>
@@ -53,8 +53,8 @@ const Login = () => {
             </p>
           </div>
         </div>
-        <div className="py-16">
-          <div className=" hidden Passport md:flex md:flex-col md:justify-evenly md:items-center bg-homebackground-green w-[390px] h-[350px]">
+        <div className="hidden md:block py-16">
+          <div className="  Passport md:flex md:flex-col md:justify-evenly md:items-center bg-homebackground-green md:w-[390px] md:h-[350px]">
             <p className=" text-center px-5 p-3 text-[24px] text-poetry">
               ———連結社群帳號———
             </p>
@@ -66,7 +66,7 @@ const Login = () => {
                 <img
                   src={image}
                   alt={`社群帳號按鈕-${index}`}
-                  className="w-[50%] h-[70%] object-contain"
+                  className="w-full h-[40px] object-contain"
                 />
               </div>
             ))}

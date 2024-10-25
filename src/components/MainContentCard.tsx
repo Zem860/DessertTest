@@ -15,13 +15,13 @@ const MainContentCard = ({ reverse }: MainContentCardProps) => {
     : ['為甚麼———', '一定要吃甜點。'];
 
   return (
-    <section className=" mb-[63rem] md:mb-20 ">
+    <section className="mb-[63rem] md:mb-20 md:bg-homebackground-green ">
       <div
-        className={`w-full flex flex-col ${isReversed} md:items-center md:justify-around h-96 md:bg-homebackground-green `}
+        className={`w-full flex flex-col ${isReversed} md:items-center md:justify-around h-96 `}
       >
         <div
           style={{ backgroundImage: `url(${imageShown})` }}
-          className={`order-2 w-full h-auto aspect-square md:order-none bg-cover bg-center md:w-[460px] md:h-[460px]`}
+          className={`order-2 w-full h-auto aspect-square md:order-none bg-cover bg-center md:w-[460px] md:h-[460px]  max-w-full`}
         ></div>
         <div className=" p-5 md:p-0 order-3 md:order-none bg-homebackground-green h-auto flex flex-col md:justify-between md:flex-row-reverse md:h-72 ">
           <p className=" poetry">
