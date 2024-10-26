@@ -74,17 +74,17 @@ const Cart = () => {
         </div>
         <div className="right">
           <div className="bg-white lg:bg-dessert-green w-full lg:w-[300px] flex flex-col justify-center">
-            <p className=" self-center w-[80%] lg:w-auto bg-homebackground-green py-2 text-2xl m-4 text-center border-b border-b-homebackground-green-4 text-dessert-green lg:text-homebackground-green lg:bg-dessert-green font-bold">
+            <p className=" self-center w-[80%]  bg-homebackground-green py-2 text-2xl m-4 text-center border-b border-b-homebackground-green-4 text-dessert-green lg:text-homebackground-green lg:bg-dessert-green font-bold">
               訂單摘要
             </p>
             <div className="flex m-4 justify-between text-dessert-green lg:text-homebackground-green mb-2">
-              <p>小記</p> <p>{sum.toLocaleString()}</p>
+              <p>小記</p> <p>NT$ {sum.toLocaleString()}</p>
             </div>
             <div className="flex m-4 justify-between  text-dessert-green lg:text-homebackground-green  mb-2">
-              <p>運費</p> <p>{shippingFee}</p>
+              <p>運費</p> <p>NT$ {shippingFee}</p>
             </div>
             <div className="flex m-4 justify-between  text-dessert-green lg:text-homebackground-green font-bold text-[1.25rem] mb-2">
-              <p>總計</p> <p>{( sum+ shippingFee).toLocaleString()}</p>
+              <p>總計</p> <p>NT$ {( sum+ shippingFee).toLocaleString()}</p>
             </div>
             <Link to="/checkout">
               <button type="button" className="bg-btn-yellow px-5 py-3 w-full">

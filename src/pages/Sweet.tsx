@@ -1,6 +1,6 @@
 import HomeHeader from '../components/HomeHeader';
 import Card from '../components/Card';
-import { imagesLinksSweet } from '../components/ImageData';
+import { imagesLinksSweet } from '../data/ImageData';
 const Sweet = () => {
   return (
     <>

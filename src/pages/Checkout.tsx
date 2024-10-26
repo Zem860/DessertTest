@@ -146,14 +146,14 @@ const Checkout = () => {
               </div>
               <div className="content p-6">
                 <ul className="flex flex-col justify-between">
-                  {cartData.map((image, index) => (
+                  {cartData.map((data, index) => (
                     <li
                       key={index}
                       className="flex mb-2 justify-between items-center"
                     >
                       <img
                         className="w-[120px] h-[80px]"
-                        src={image}
+                        src={data.image}
                         alt="sweets image"
                       />
                       <div className="content text-poetry">

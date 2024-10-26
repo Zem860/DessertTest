@@ -2,7 +2,7 @@ import HomeHeader from '../components/HomeHeader';
 import MainContentCard from '../components/MainContentCard';
 import Slogan from '../components/Slogan';
 import Card from '../components/Card';
-import { imagesLinksHompage } from '../components/ImageData';
+import { imagesLinksHompage } from '../data/ImageData';
 const Home = () => {
   return (
     <>

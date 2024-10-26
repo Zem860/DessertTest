@@ -5,13 +5,13 @@
   }
 }
 
-.poetry{
+.poetry {
   line-height: 1.8;
-    color: #3F5D45;
-    font-size: 2.1rem;
+  color: #3f5d45;
+  font-size: 2.1rem;
 }
 
-.tag-words{
+.tag-words {
   writing-mode: vertical-lr;
   text-orientation: upright;
 }
@@ -22,7 +22,7 @@
     writing-mode: vertical-rl;
     text-orientation: upright;
     line-height: 1.8;
-    color: #3F5D45;
+    color: #3f5d45;
     margin-right: 10px;
     font-size: 16px;
   }
@@ -32,24 +32,41 @@
   }
 }
 
+
 .banner-card {
-  background: #3f5d45 0% 0% no-repeat padding-box;
-  opacity: 0.6;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  margin-top:-8vh;
-  color:white;
+  position: relative;
+  margin-top: -8vh;
+  color: white;
   font-weight: bold;
-  &:hover{
+  z-index: 3;
+  &:hover {
+    cursor: pointer;
+    color: #3F5D45;
+  }
+
+  &::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3f5d45;
+    opacity: 0.8;
+  }
+
+  &:hover::before {
+    opacity: 0.9;
     background-color: #FFE180;
     cursor: pointer;
-    color:black;
   }
 }
 
 /* 使用媒體查詢調整小螢幕下的樣式 */
 @media (max-width: 640px) {
-    .banner-card {
-      margin-top: -50%; /* 在小於 sm 的螢幕上移除 margin-top */
-    }
+  .banner-card {
+    margin-top: -50%; /* 在小於 sm 的螢幕上移除 margin-top */
   }
+}

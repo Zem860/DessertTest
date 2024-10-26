@@ -1,4 +1,4 @@
-import { passportImg } from '../components/ImageData';
+import { passportImg } from '../data/ImageData';
 const Login = () => {
   return (
     <div className="md:flex md:flex-col md:justify-between">
