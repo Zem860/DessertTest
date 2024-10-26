@@ -7,18 +7,7 @@ interface QS{
   index:number,
 }
 
-const QuantitySelector = ({ amount, increase, decrease, index }:QS) => {
-  // const [value, setValue] = useState(0);
-  // const increase = () => {
-  //   setValue(value + 1);
-  // };
-
-  // const decrease = () => {
-  //   if (value === 0){
-  //       return 
-  //   }
-  //   setValue(value - 1);
-  // };
+const QuantitySelector = ({amount, increase, decrease,index}:QS) => {
 
   return (
     <>
