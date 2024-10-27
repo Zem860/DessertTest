@@ -47,7 +47,7 @@ const HomeHeader = () => {
         <header className="md:mx-auto">
           <section className=" md:w-full md:px-4 ">
             <div
-              className="banner relative bg-cover bg-center h-[496px] flex justify-end px-32 md:py-6 w-full"
+              className="banner relative bg-cover bg-center h-[496px] flex justify-end md:px-32 md:py-6 w-full"
               style={{ backgroundImage: `url(${bgBackground})` }}
               
             >{!isHomePage && (
