@@ -4,6 +4,8 @@ import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 const Confirm = () => {
   const cartData = useSelector((state: RootState) => state.cartData.value);
+  const hasShipping = cartData.reduce((accu,data)=>accu+data.amount,0)
+  const sum = cartData.reduce((accu,data)=>accu+data.amount*data.price,0)
   return (
     <>
       <div className="w-full md:w-[80%] md:mx-auto md:mt-20">
@@ -79,15 +81,15 @@ const Confirm = () => {
               <div className="px-8">
                 <div className="flex justify-between mb-5 text-poetry">
                   <p>小計</p>
-                  <p>NT$ 2,700</p>
+                  <p>NT$ {sum}</p>
                 </div>
                 <div className="flex justify-between mb-5 text-poetry">
                   <p>運費</p>
-                  <p>NT$ 300</p>
+                  <p>NT$ {hasShipping&&300}</p>
                 </div>
                 <div className="flex justify-between mb-5 text-[1.25rem] text-poetry font-bold">
                   <p>總計</p>
-                  <p>NT$ 3,000</p>
+                  <p>NT$ {hasShipping && sum+300}</p>
                 </div>
               </div>
             </div>
@@ -108,8 +110,8 @@ const Confirm = () => {
                         alt="sweets image"
                       />
                       <div className="content text-poetry">
-                        <p>焦糖馬卡龍（2）</p>
-                        <p className="font-bold text-[1.2rem]">NT$ 900</p>
+                        <p>焦糖馬卡龍（{data.amount}）</p>
+                        <p className="font-bold text-[1.2rem]">NT$ {data.amount*data.price}</p>
                       </div>
                     </li>
                   ))}

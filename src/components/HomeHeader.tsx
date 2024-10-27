@@ -12,9 +12,10 @@ const HomeHeader = () => {
   const isSuccess = location.pathname === '/success';
 
   return (
-    <>
+    // 只給付款成功的頁面
+    <div className='px-[4.2rem]'>
       {isSuccess ? (
-        <header className="md:mx-auto md:w-10/12 md:mb-20 ">
+        <header className="md:mx-auto md:mb-20 ">
           <section className=" md:w-full  ">
             <div className="relative banner bg-cover bg-center h-screen  w-full bg-[url(https://bit.ly/2P7GhNd)]"></div>
             <div className=" absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[40%] ">
@@ -42,18 +43,19 @@ const HomeHeader = () => {
           </Link>
         </header>
       ) : (
+        // 給homepage和甜點頁
         <header className="md:mx-auto">
           <section className=" md:w-full md:px-4 ">
             <div
-              className="banner relative bg-cover bg-center h-[496px]  w-full"
+              className="banner relative bg-cover bg-center h-[496px] flex justify-end px-32 md:py-6 w-full"
               style={{ backgroundImage: `url(${bgBackground})` }}
               
             >{!isHomePage && (
-              <div className="absolute top-[50px] right-[20px]">
+              <div className="absolute">
                 <Slogan
                   words1={'想吃甜點———'}
                   words2={'是不需要理由的'}
-                  size="text-5xl"
+                  size="text-4xl"
                   singleSlogan
                   alwaysVertical
                 />
@@ -64,7 +66,7 @@ const HomeHeader = () => {
           {location.pathname === '/' && <HeaderCards />}
         </header>
       )}
-    </>
+    </div>
   );
 };
 
