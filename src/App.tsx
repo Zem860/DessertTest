@@ -10,8 +10,6 @@ import Payment from './pages/Payment';
 import SuccessPayment from './pages/SuccessPayment';
 import Confirm from './pages/Confirm';
 import Footer from './components/Footer';
-
-import './index.css'
 import './styles/style.css'
 
 
