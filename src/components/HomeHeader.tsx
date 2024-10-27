@@ -23,7 +23,7 @@ const HomeHeader = () => {
                 <RadioLine
                   icons={['check_circle', 'check_circle', 'check_circle']}
                 />
-                <p className="text-5xl font-bold text-dessert-green py-6">
+                <p className=" text-4xl md:text-5xl font-bold text-dessert-green py-6">
                   付款成功
                 </p>
 
