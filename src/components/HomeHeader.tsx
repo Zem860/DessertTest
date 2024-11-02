@@ -13,7 +13,7 @@ const HomeHeader = () => {
 
   return (
     // 只給付款成功的頁面
-    <div className='px-[4.2rem]'>
+    <div className={isSuccess?'w-full md:px-[4.2rem]':'px-[4.2rem]'}>
       {isSuccess ? (
         <header className="md:mx-auto md:mb-20 ">
           <section className=" md:w-full  ">
