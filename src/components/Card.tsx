@@ -7,7 +7,6 @@ const Card = ({bgBackground}:Card) => {
 
   return (
     <>
-
       <div className="w-full md:w-[300px] mx-2 ">
         <div
           className=" w-full bg-cover bg-center h-[600px] md:h-[315px]"
