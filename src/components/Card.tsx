@@ -31,9 +31,9 @@ const Card = ({bgBackground}:Card) => {
           </div>
         </div>
         <div className=" flex justify-between items-center">
-          <p className="bg-[#EAF0ED] cursor-pointer text-[#3F5D45] font-bold text-center text-5xl md:text-2xl  w-full p-4 ">
+          <button className="bg-[#EAF0ED] hover:bg-[#3F5D45] hover:text-[#EAF0ED] cursor-pointer text-[#3F5D45] font-bold text-center text-5xl md:text-2xl  w-full p-4 ">
             加入購物車
-          </p>
+          </button>
         </div>
       </div>
     </>
