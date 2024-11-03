@@ -13,7 +13,7 @@ const HomeHeader = () => {
 
   return (
     // 只給付款成功的頁面
-    <div className={isSuccess?'w-full md:px-[4.2rem]':'px-[4.2rem]'}>
+    <div className='md:px-[4.2rem]'>
       {isSuccess ? (
         <header className="md:mx-auto md:mb-20 ">
           <section className=" md:w-full  ">
@@ -44,8 +44,8 @@ const HomeHeader = () => {
         </header>
       ) : (
         // 給homepage和甜點頁
-        <header className="md:mx-auto">
-          <section className=" md:w-full md:px-4 ">
+        <header className=" md:mx-auto">
+          <section className=" w-full md:px-4 ">
             <div
               className="banner relative bg-cover bg-center h-[496px] flex justify-end md:px-32 md:py-6 w-full"
               style={{ backgroundImage: `url(${bgBackground})` }}
