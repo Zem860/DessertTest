@@ -1,10 +1,17 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
-import About from './pages/About';
+import Sweet from './pages/Sweet';
 import NotFound from './pages/NotFound';
 import Navigation from './components/Navigation';
-import './index.css'
+import Login from './pages/Login';
+import Cart from './pages/Cart';
+import Checkout from './pages/Checkout';
+import Payment from './pages/Payment';
+import SuccessPayment from './pages/SuccessPayment';
+import Confirm from './pages/Confirm';
+import Footer from './components/Footer';
 import './styles/style.css'
+
 
 function App() {
   return (
@@ -13,13 +20,18 @@ function App() {
     <Navigation />
       <Routes >
         <Route  path="/" element={<Home />}/>
-        <Route  path="/about" element={<About/>}/>
+        <Route  path="/sweet" element={<Sweet/>}/>
+        <Route  path="/login" element={<Login/>}/>
+        <Route  path="/checkout" element={<Checkout/>}/>
         {/* <Route  path="/ramen/:id" element={<RamenDetails/>}/> */}
+        <Route  path="/cart" element={<Cart/>}/>
+        <Route  path="/payment" element={<Payment/>}/>
+        <Route  path="/confirm" element={<Confirm/>}/>
+        <Route  path="/success" element={<SuccessPayment/>}/>
         <Route  path="*" element={<NotFound/>}/>
-
       </Routes>
-      
     </div>
+    <Footer />
     </Router>
   );
 }

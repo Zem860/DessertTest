@@ -1,3 +1,7 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 .nav-items li {
   padding: 0.5rem;
   &:hover {
@@ -5,12 +9,16 @@
   }
 }
 
-.poetry{
+.poetry {
   line-height: 1.8;
-    color: #3F5D45;
-    font-size: 2.1rem;
+  color: #3f5d45;
+  font-size: 2.1rem;
 }
 
+.tag-words {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
 
 @media (min-width: 768px) {
   .poetry {
@@ -18,7 +26,7 @@
     writing-mode: vertical-rl;
     text-orientation: upright;
     line-height: 1.8;
-    color: #3F5D45;
+    color: #3f5d45;
     margin-right: 10px;
     font-size: 16px;
   }
@@ -28,24 +36,62 @@
   }
 }
 
+.notFoundBody {
+  height: 100vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  &::before {
+    background-image:url('https://bit.ly/2P7GhNd');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    top:0;
+    bottom: 0;
+    right:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    content:"";
+    z-index:-1;
+  }
+}
 .banner-card {
-  background: #3f5d45 0% 0% no-repeat padding-box;
-  opacity: 0.6;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  margin-top:-8vh;
-  color:white;
+  position: relative;
+  margin-top: -8vh;
+  color: white;
   font-weight: bold;
-  &:hover{
-    background-color: #FFE180;
+  z-index: 3;
+  &:hover {
     cursor: pointer;
-    color:black;
+    color: #3f5d45;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3f5d45;
+    opacity: 0.8;
+  }
+
+  &:hover::before {
+    opacity: 0.9;
+    background-color: #ffe180;
+    cursor: pointer;
   }
 }
 
 /* 使用媒體查詢調整小螢幕下的樣式 */
 @media (max-width: 640px) {
-    .banner-card {
-      margin-top: -50%; /* 在小於 sm 的螢幕上移除 margin-top */
-    }
+  .banner-card {
+    margin-top: -50%; /* 在小於 sm 的螢幕上移除 margin-top */
   }
+}
